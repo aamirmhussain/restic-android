@@ -132,6 +132,8 @@ abstract class ResticRepo(
             listOf(
                 "--json",
                 "backup",
+                "--exclude-file",
+                "/storage/emulated/0/Restic/exclude-file.txt"),
                 "--host",
                 restic.hostname
             ).plus(
